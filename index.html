@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{  
+            text-align:center;
+            margin: 3%;
+        }
+        tr,td{
+            padding: 6px;
+        }
+    </style>
+</head>
+<body onload="getData()">
+    <center><table id="info">
+        <tr>
+            <td>ID:</td>
+            <td><input type="text" id="id"></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name"></td>
+       </tr>
+       <tr>
+            <td>Branch:</td>
+            <td><input type="text" id="branch"></td>
+      </tr>
+    <table></center>
+    <br><br>
+    <button onclick="createData()">add user</button>&nbsp;
+    <button onclick="updateData()">update user</button><br><br>
+    <button onclick="getData()">show user</button><br><br>
+    <div id="res"></div>
+    <script src="fetchapi.js"></script>
+</body>
+</html>
